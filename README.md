@@ -4,7 +4,7 @@ This is a todo list web application where I will be implementing design patterns
 
 ## Changelog
 
-### for changelog please refer to Changelog
+### for changelog please refer to [Changelog](https://github.com/MajeedReact/fullstack-todo/blob/master/Changelogs.md)
 
 ## <br/>Design patterns that are implemented so far<br/>
 
