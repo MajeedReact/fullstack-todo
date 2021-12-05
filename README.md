@@ -39,6 +39,7 @@ Taskable is a todo list web application where I will be implementing design patt
 5. typescript
 6. db-migrate
 7. db-migrate-pg
+8. dotenv
 
 ## <br/>Requirements
 ### Backend:
