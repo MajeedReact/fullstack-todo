@@ -1,0 +1,45 @@
+<!--
+  we use property binding as well as the directive ngFor
+-->
+<div style="margin-top: 70px; text-align: center">
+  <h3>Hello, what needs to be done?</h3>
+</div>
+<div style="margin-top: 20px; text-align: center">
+  <button routerLink="/add" mat-fab color="accent">
+    <mat-icon>add</mat-icon>
+  </button>
+</div>
+
+<div fxLayout="row wrap" style="margin-top: 20px">
+  <mat-card
+    class="mat-elevation-z4"
+    *ngFor="let task of taskList"
+    fxFlex="25%"
+    fxLayoutGap="3px grid"
+    fxFlex.xs="100%"
+    fxFlex.sm="33%"
+  >
+    <mat-card-header>
+      <mat-card-title>{{ task.title }}</mat-card-title>
+    </mat-card-header>
+
+    <mat-card-content>
+      <p>{{ task.description }}</p>
+
+      <mat-card-footer style="margin-left: 2px">
+        <p *ngIf="task.priority">Status: {{ task.priority }}</p>
+      </mat-card-footer>
+    </mat-card-content>
+
+    <mat-card-actions style="margin: 5px 0px 0px 10px" fxLayoutGap="15px">
+      <a routerLink="/task/{{ task.id }}">
+        <button mat-mini-fab color="primary">
+          <mat-icon>edit</mat-icon>
+        </button>
+      </a>
+      <button (click)="deleteTask(task.id)" mat-mini-fab color="accent">
+        <mat-icon>delete</mat-icon>
+      </button>
+    </mat-card-actions>
+  </mat-card>
+</div>

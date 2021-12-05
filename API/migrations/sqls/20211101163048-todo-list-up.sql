@@ -1,0 +1,1 @@
+CREATE TABLE todo_list(id SERIAL PRIMARY KEY, title VARCHAR(100), description text, dueDate DATE, priority VARCHAR(50));
