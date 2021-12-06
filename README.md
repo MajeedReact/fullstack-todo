@@ -18,7 +18,7 @@ Taskable is a todo list web application where I will be implementing design patt
 ## <br/>Design patterns that are implemented so far<br/>
 
 ### 1. Singleton for the database connection [Located in database.ts](https://github.com/MajeedReact/fullstack-todo/blob/master/API/src/database.ts)
-### 2. Command design pattern used on CRUD operations [Located in models folder](https://github.com/MajeedReact/fullstack-todo-list/tree/main/API/src/models)
+### 2. Command design pattern used on CRUD operations [Located in models folder](https://github.com/MajeedReact/fullstack-todo/tree/master/API/src/models)
 
 ## <br/>CRUD operations
 
